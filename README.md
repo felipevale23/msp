@@ -55,12 +55,12 @@ Veja a parte de como você verifica se está no ambiente (usando which (linux, u
 (**How to Install requirements files**)
 
 ```shell
-	$ pip3 install -r requirements.txt
+	$ pip3 install -r requirements.txt --break-system-packages
 ```
 
 > Requirements files are used to hold the result from pip freeze for the purpose of achieving repeatable installations. In this case, your requirement file  **contains a pinned version of everything that was installed**  when  **pip freeze**  was  **run**.
 
 ```shell
 	$ python3 -m pip3 freeze > requirements.txt
-	$ python3 -m pip3 install -r requirements.txt
+	$ python3 -m pip3 install -r requirements.txt --break-system-packages
 ```
